@@ -1,0 +1,302 @@
+/* App.css */
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.section h4 {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 20px;
+  background-color: red;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.meals-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.meal-item {
+  width: 300px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.meal-item:hover {
+  background-color: #e3eda1;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor:pointer ;
+}
+
+.meal-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.meal-details {
+  text-align: center;
+}
+
+.meal-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.like-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.like-btn:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid black ;
+  background-color:#8fb7f7;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover{
+  color:gold;
+  background-color:black;
+}
+.btn-hipster:hover{
+  color:#9c167f;
+  background-color:#15d2d5;
+}
+.btn-hipster {
+  background-color: #ff4081;
+  margin-left: 0.5rem;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+  z-index: 100;
+}
+
+.modal-container {
+  width: 80vw;
+  max-width: 800px;
+  height: 80vh;
+  overflow: auto; /* Use auto instead of scroll for better flexibility */
+  border-radius: var(--borderRadius);
+  background: var(--white);
+  padding: 20px; /* Add padding for better spacing inside the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: var(--transition);
+}
+
+/* Additional styles for better readability */
+.modal-container h2 {
+  color: white;
+  font-size: 24px;
+}
+
+.modal-container p {
+  color: white;
+  font-size: 16px;
+}
+/* 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-container {
+  position: relative;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  width: 90vw;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+ */
+.modal-img {
+  width: 50%;
+  height: 200px;
+  margin-left:160px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.modal-container h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-container p {
+  margin-bottom: 1rem;
+}
+
+.modal-container a {
+  display: block;
+  margin-top: 1rem;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.modal-container button {
+  position: fixed;
+  bottom: 10px;
+  left:10px;
+  margin-left:220px;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.modal-container button:hover{
+  color:gold;
+}
+a {
+  display: inline-block;
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-align: center; /* Add this line */
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: lightgreen;
+}
+/* YourApp.css or a separate CSS file */
+
+/* YourApp.css or a separate CSS file */
+
+.favorites {
+  padding: 20px;
+}
+
+.favorites-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h5 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.favorites-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+}
+
+.favorite-item {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  
+}
+
+.favorites-img {
+  width: 150px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+.favorites-img:hover{
+  cursor:pointer
+}
+.remove-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  color:gold;
+  border: none;
+  border-radius: 0 8px 0 0;
+  cursor: pointer;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #c01616;
+  color:black;
+  
+}
+
+.favorite-item h4 {
+  /* Style for the title */
+  margin: 10px 0;
+  font-size: 1rem;
+  text-align: center;
+}
